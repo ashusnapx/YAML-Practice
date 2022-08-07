@@ -1,0 +1,19 @@
+# Stores key value pairs
+"apple" : "this is a famous tech brand"
+20 : "This is Ashutosh Kumar's roll number"
+---
+#LIST
+- Ashutosh Kumar
+- Jabalpur Engineering College
+- India
+---
+cities:
+ - new delhi
+ - mumbai
+ - gujrat
+ - madhya pradesh
+---
+cities: [new delhi,mumbai,gujrat,madhya pradesh]
+---
+{JEC: "75 years old college",age: 75}
+...

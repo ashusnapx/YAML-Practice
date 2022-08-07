@@ -1,0 +1,51 @@
+#String
+name: !!str Ashutosh Kumar
+device: !!str "MacBook Pro"
+dream: !!str 'SDE at Google'
+
+bio: |
+Hi i'm a third year undergrad.
+I'm learning YAML to get started with Kubernetes.
+
+# write a single line in multiple lines
+message: >
+this message
+even though
+written in
+multiple lines
+but will be 
+considered in
+single line.
+
+# numbers
+marks: 917
+temperature: 40.5 # obviously in celcius
+booleanValue: No # n, N, false, False, FALSE
+# same for true : True, yes, y, Yes, YES
+
+#specify the datatype
+zero: !!int 0
+positiveNum: !!int 45
+negativeNum: !!int -45
+binaryNum: !!int 010100011
+octalNum: !!int 06574
+hexaNum: !!int 0x45
+commaValue: !!int +540_000 # 540,000
+
+# floating point numbers
+marks: !!float 25.5
+infinity: !! .inf
+not a number: !! .nan
+
+# boolean
+booleanValue: !!bool No # n, N, false, False, FALSE
+# same for true : True, yes, y, Yes, YES
+
+# null
+surname: !!null Null # null, Null, NULL, ~(tilde)
+~: this is a null key
+
+# date and time
+date: !!timestamp 2022-08-06
+india time: 2022-08-06T06:26:04.10 +5:30
+no time zone: 2022-08-06T06:26:04.10

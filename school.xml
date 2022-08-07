@@ -1,0 +1,10 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<School name = "Delhi Public School " principal = "Dr. Janardan Pandey">
+    <students>
+       <student>
+            <name>Ashutosh Kumar</name>
+            <age> 22 </age>
+            <rollNo> 20 </rollNo>
+       </student>
+    </students>
+</School>

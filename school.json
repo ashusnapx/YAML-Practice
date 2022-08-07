@@ -1,0 +1,28 @@
+{
+    "school": [
+        {
+            "name": "Delhi Public School",
+            "principal": "Dr. Janardan Pandey",
+            "students": [
+                {
+
+                },
+                {
+
+                }
+            ]
+        },
+        {
+            "name": "Resonance Eduventures",
+            "principal": "R.K. Tiwari",
+            "students": [
+                {
+
+                },
+                {
+
+                }
+            ]
+        }
+    ]
+}

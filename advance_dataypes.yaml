@@ -1,0 +1,96 @@
+student: !!seq
+  - marks
+  - roll_no
+  - dob
+  - name
+
+# other way of writing above data is :
+student: [marks, roll_no, dob, name]
+
+# Sparse sequence
+message:
+ - hey
+ - how
+ - 
+ - you
+ - Null
+
+# Nested sequence
+- 
+ - Singrauli
+ - Bhopal
+ - Indore
+- 
+ - Begusarai
+ - Purnia
+ - Bhagalpur
+
+# When their is a 🔑 key and value pair, then it is called 'Map'.
+!! map
+
+# nested mapping: map within map
+name: Ashutosh Kumar
+role: 
+  age: 22
+  job: student
+
+#same as 
+name: Ashutosh Kumar
+role: {age: 22,job: student}
+
+#pair data type
+pairs example: !!pairs
+  job: son
+  job: student
+  job: friend
+
+# same as
+pairs example: !!pairs [job: son, job: student, job: friend]
+
+# !!set will allow you to have unique values
+names: !!set
+ ? Ashutosh 
+ ? Hritik
+ ? Sanket
+ ? Yogendra
+ ? Ayush
+
+# dictionary
+people:
+ - Ashutosh:
+   name: Ashutosh Kumar
+   roll: 020
+ - Hritik:
+   name: Hritik Kumar
+   roll: 039
+ - Sanket:
+   name: Sanket Upadhyay
+   roll: 078
+
+# reusing some properties
+likings:
+ favCar: Mustang
+ favToy: My B.Tech. Degree
+
+person1:
+ name: Ashutosh
+ favCar: Mustang
+ favToy: My B.Tech. Degree
+
+person2:
+ name: Yogendra
+ favCar: Mustang
+ favToy: My B.Tech. Degree
+
+# same as 
+likings: &likes
+ favCar: Mustang
+ favToy: My B.Tech. Degree
+
+person1:
+ name: Ashutosh
+ <<: *likes
+
+person2:
+ name: Yogendra
+ <<: *likes
